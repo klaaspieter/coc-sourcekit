@@ -1,0 +1,8 @@
+/src
+/tsconfig.json
+/tslint.json
+/scripts
+*.map
+*.ts
+*.log
+
