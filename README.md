@@ -8,7 +8,7 @@ Sourcekit language server extension for [coc].
 
 In vim or neovim, run command:
 
-```
+```sh
 :CocInstall coc-sourcekit
 ```
 
@@ -23,9 +23,10 @@ See [sourcekit-lsp].
 
 ## Configuration options
 
-|Key|Description|
-|----|------------|
-| **`sourcekit.enable`**
+|Key|Description|Default|
+|----|------------|-----|
+|`sourcekit.enable`|Enable sourcekit extension|true|
+|sourcekit.commandPath|Path to sourcekit-lsp binary|
 
 ## Development
 
