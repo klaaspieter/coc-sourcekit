@@ -19,8 +19,9 @@ export async function activate(context: ExtensionContext): Promise<void> {
     return
   }
 
+ const commandPath = (await workspace.runCommand('xcrun --toolchain swift --find sourcekit-lsp')).trim()
   const serverOptions: ServerOptions = {
-    command: config.commandPath,
+    command: config.commandPath || commandPath,
     transport: TransportKind.stdio
   }
 
