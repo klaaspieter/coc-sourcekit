@@ -32,6 +32,24 @@ See [sourcekit-lsp].
 
 1. Run `yarn build` or `yarn build:watch`
 2. Run `yarn run link:add` to link extension
+3. Open a Swift file in vim
+
+To see that it worked use [`:CocOpenLog`].
+
+
+Alternatively a [`.env`](.env) is provided which allows for tailing the logs outside of vim:
+
+```sh
+# In the split/tab you will open vim
+source .env
+
+# In another split/tab
+tail -f coc.log
+```
+
+Or source it [automatically](https://github.com/klaaspieter/dotfiles/blob/5c2c1a6fa1a6f9ccc9031c3dc8de2ea9a3c4fdb0/zshrc#L327-L334).
+
+[`:CocOpenLog`]: https://github.com/neoclide/coc.nvim/blob/db5ffd2ff0d766c2cfbd711898e8a3f5736e038c/doc/coc.txt#L1659
 
 ## Acknowledgements
 
