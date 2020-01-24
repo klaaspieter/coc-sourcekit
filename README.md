@@ -27,6 +27,7 @@ See [sourcekit-lsp].
 |----|------------|-----|
 |`sourcekit.enable`|Enable sourcekit extension|true|
 |`sourcekit.commandPath`|Path to sourcekit-lsp binary|Output of `xcrun --toolchain swift --find sourcekit-lsp`|
+|`sourcekit.trace.server`|Trace the communication between coc and the sourcekit language server|
 
 ## Development
 

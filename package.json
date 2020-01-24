@@ -43,6 +43,15 @@
         },
         "sourcekit.commandPath": {
           "type": "string"
+        },
+        "sourcekit.trace.server": {
+          "type": "string",
+          "default": "off",
+          "enum": [
+            "off",
+            "verbose"
+          ],
+          "description": "Trace the communication between coc and the sourcekit language server"
         }
       }
     }
