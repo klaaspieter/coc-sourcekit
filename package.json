@@ -1,6 +1,6 @@
 {
   "name": "coc-sourcekit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "sourcekit extension for coc",
   "author": "Klaas Pieter Annema <kp@annema.me",
   "license": "MIT",
