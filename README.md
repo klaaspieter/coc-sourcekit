@@ -14,6 +14,8 @@ In vim or neovim, run command:
 
 `sourcekit-lsp` is still under heavy development and is not provided with Xcode's default toolchain. For coc-sourcekit to work you will need to [download your own toolchain](https://github.com/apple/sourcekit-lsp#getting-started).
 
+This plugin requires filetype to be set to swift. Depending on your configuration this may or may not happen automatically (see [#4](https://github.com/klaaspieter/coc-sourcekit/issues/4)). You can [add an autogroup to your vimrc](https://github.com/keith/swift.vim/blob/c4053da88208cef5a32a5862694d36b73f6ce310/ftdetect/swift.vim#L1) or install [swift.vim](https://github.com/keith/swift.vim)/[vim-polyglot](https://github.com/sheerun/vim-polyglot).
+
 ## Features
 
 See [sourcekit-lsp].
