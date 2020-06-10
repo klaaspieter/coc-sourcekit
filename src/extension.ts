@@ -45,7 +45,9 @@ export async function activate(context: ExtensionContext): Promise<void> {
   }
 
   let targetArch = config.targetArch
-  if (!targetArch) {
+  if (targetArch) {
+      args = args.concat(['-Xswiftc', '-target', '-Xswiftc', targetArch])
+  }else{
       args = args.concat(['-Xswiftc', '-target', '-Xswiftc', 'x86_64-apple-ios13.2-simulator'])
       //workspace.showMessage("Cannot find target Architecture. set `sourcekit.targetArch` in your coc-config.")
   }
