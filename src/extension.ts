@@ -11,7 +11,7 @@ import {
 interface SourceKitConfig {
   enable: boolean
   commandPath: string
-  sdkPath: string
+  iOSsdkPath: string
   targetArch: string
 }
 
@@ -32,24 +32,21 @@ export async function activate(context: ExtensionContext): Promise<void> {
   }
 
   let args: string[] = [];
-  let sdkPath = config.sdkPath
-  if (!sdkPath) {
+  let iOSsdkPath = config.iOSsdkPath
+  if (!iOSsdkPath) {
       try {
-          sdkPath = (await workspace.runCommand('xcrun --sdk iphonesimulator --show-sdk-path')).trim()
-          args = args.concat(['-Xswiftc', '-sdk', '-Xswiftc', sdkPath])
+          iOSsdkPath = (await workspace.runCommand('xcrun --sdk iphonesimulator --show-sdk-path')).trim()
+          args = args.concat(['-Xswiftc', '-sdk', '-Xswiftc', iOSsdkPath])
       } catch {
-          workspace.showMessage("Cannot find SDK path. set `sourcekit.sdkPath` in your coc-config.")
+          workspace.showMessage("Cannot find SDK path. set `sourcekit.iOSsdkPath` in your coc-config.")
       }
   }else{
-      args = args.concat(['-Xswiftc', '-sdk', '-Xswiftc', sdkPath])
+      args = args.concat(['-Xswiftc', '-sdk', '-Xswiftc', iOSsdkPath])
   }
 
   let targetArch = config.targetArch
   if (targetArch) {
       args = args.concat(['-Xswiftc', '-target', '-Xswiftc', targetArch])
-  }else{
-      args = args.concat(['-Xswiftc', '-target', '-Xswiftc', 'x86_64-apple-ios13.2-simulator'])
-      //workspace.showMessage("Cannot find target Architecture. set `sourcekit.targetArch` in your coc-config.")
   }
 
   const serverOptions: ServerOptions = {
