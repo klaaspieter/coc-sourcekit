@@ -52,6 +52,16 @@
             "verbose"
           ],
           "description": "Trace the communication between coc and the sourcekit language server"
+        },
+        "sourcekit.iOSsdkPath": {
+            "type": "string",
+            "default": "",
+            "description": "The path to the desired iOS SDK"
+        },
+        "sourcekit.targetArch": {
+            "type": "string",
+            "default": "",
+            "description": "The name of the target to generate code"
         }
       }
     }
