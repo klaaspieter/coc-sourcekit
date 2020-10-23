@@ -53,15 +53,25 @@
           ],
           "description": "Trace the communication between coc and the sourcekit language server"
         },
-        "sourcekit.iOSsdkPath": {
+        "sourcekit.sdkPath": {
             "type": "string",
             "default": "",
-            "description": "The path to the desired iOS SDK"
+            "description": "The path to the desired SDK"
+        },
+        "sourcekit.sdk": {
+            "type": "string",
+            "default": "",
+            "description": "The name of the SDK to use"
         },
         "sourcekit.targetArch": {
             "type": "string",
             "default": "",
             "description": "The name of the target to generate code"
+        },
+        "sourcekit.args": {
+            "type": "array",
+            "default": [],
+            "description": "Extra arguments to pass to the lsp"
         }
       }
     }
