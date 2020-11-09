@@ -26,9 +26,9 @@ export async function activate(context: ExtensionContext): Promise<void> {
   let commandPath = config.commandPath
   if (!commandPath) {
     try {
-      commandPath = (await workspace.runCommand('xcrun --toolchain swift --find sourcekit-lsp')).trim()
+      commandPath = (await workspace.runCommand('xcrun --find sourcekit-lsp')).trim()
     } catch {
-      workspace.showMessage("Cannot find sourcekit-lsp. Install a Swift toolchain or set `sourcekit.commandPath` in your coc-config.")
+      workspace.showMessage("Cannot find sourcekit-lsp. Install Xcode 11.4+ or set `sourcekit.commandPath` in your coc-config.")
       return
     }
   }
