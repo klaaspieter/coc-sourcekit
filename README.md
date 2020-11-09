@@ -25,8 +25,10 @@ See [sourcekit-lsp].
 |`sourcekit.enable`|Enable sourcekit extension|true|
 |`sourcekit.commandPath`|Path to sourcekit-lsp binary|Output of `xcrun --toolchain swift --find sourcekit-lsp`|
 |`sourcekit.trace.server`|Trace the communication between coc and the sourcekit language server|
-|`sourcekit.iOSsdkPath`| The path to the desired iOS SDK | Output of `xcrun --sdk iphonesimulator --show-sdk-path`) |
+|`sourcekit.sdkPath`|The path to the desired SDK|Nothing|
+|`sourcekit.sdk`|The name to the desired SDK to be fetched|Nothing|
 |`sourcekit.targetArch`| The name of the target (e.g x86_64-apple-ios13.2-simulator) to generate code |
+|`sourcekit.args`|Extra arguments to pass to the lsp|[]|
 
 ## Development
 
