@@ -1,6 +1,6 @@
 {
   "name": "coc-sourcekit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sourcekit extension for coc",
   "author": "Klaas Pieter Annema <kp@annema.me",
   "license": "MIT",
@@ -54,24 +54,24 @@
           "description": "Trace the communication between coc and the sourcekit language server"
         },
         "sourcekit.sdkPath": {
-            "type": "string",
-            "default": "",
-            "description": "The path to the desired SDK"
+          "type": "string",
+          "default": "",
+          "description": "The path to the desired SDK"
         },
         "sourcekit.sdk": {
-            "type": "string",
-            "default": "",
-            "description": "The name of the SDK to use"
+          "type": "string",
+          "default": "",
+          "description": "The name of the SDK to use"
         },
         "sourcekit.targetArch": {
-            "type": "string",
-            "default": "",
-            "description": "The name of the target to generate code"
+          "type": "string",
+          "default": "",
+          "description": "The name of the target to generate code"
         },
         "sourcekit.args": {
-            "type": "array",
-            "default": [],
-            "description": "Extra arguments to pass to the lsp"
+          "type": "array",
+          "default": [],
+          "description": "Extra arguments to pass to the lsp"
         }
       }
     }
