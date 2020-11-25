@@ -23,7 +23,7 @@ See [sourcekit-lsp].
 |Key|Description|Default|
 |----|------------|-----|
 |`sourcekit.enable`|Enable sourcekit extension|true|
-|`sourcekit.commandPath`|Path to sourcekit-lsp binary|Output of `xcrun --find sourcekit-lsp`|
+|`sourcekit.commandPath`|Path to sourcekit-lsp binary|Output of `which sourcekit-lsp`|
 |`sourcekit.trace.server`|Trace the communication between coc and the sourcekit language server|
 |`sourcekit.sdkPath`|The path to the desired SDK|Nothing|
 |`sourcekit.sdk`|The name to the desired SDK to be fetched|Nothing|
