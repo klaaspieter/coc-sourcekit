@@ -15,6 +15,7 @@ interface SourceKitConfig {
   sdk: string
   targetArch: string
   args: string[]
+  env: { string: string }
 }
 
 export async function activate(context: ExtensionContext): Promise<void> {
@@ -57,6 +58,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
   const serverOptions: ServerOptions = {
     command: commandPath,
     args: args,
+    options: { env: config.env },
     transport: TransportKind.stdio
   }
 
