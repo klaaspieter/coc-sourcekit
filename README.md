@@ -29,6 +29,7 @@ See [sourcekit-lsp].
 |`sourcekit.sdk`|The name to the desired SDK to be fetched|Nothing|
 |`sourcekit.targetArch`| The name of the target (e.g x86_64-apple-ios13.2-simulator) to generate code |
 |`sourcekit.args`|Extra arguments to pass to the lsp|[]|
+|`sourcekit.env`|Environment variabes to pass to the lsp|{}|
 
 ## Development
 
