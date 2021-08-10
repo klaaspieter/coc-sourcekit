@@ -29,7 +29,7 @@ See [sourcekit-lsp].
 |`sourcekit.sdk`|The name to the desired SDK to be fetched|Nothing|
 |`sourcekit.targetArch`| The name of the target (e.g x86_64-apple-ios13.2-simulator) to generate code |
 |`sourcekit.args`|Extra arguments to pass to the lsp|[]|
-|`sourcekit.env`|Environment variables to pass to the lsp|{}|
+|`sourcekit.env`|Environment variables to pass to the lsp. For Example, you could set [`SOURCEKIT_LOGGING`](https://github.com/apple/sourcekit-lsp/blob/main/Documentation/Development.md#print-sourcekit-logs) to "1" for `info`, or [`SOURCEKIT_TOOLCHAIN_PATH`](https://github.com/apple/sourcekit-lsp/blob/main/Documentation/Development.md#selecting-the-toolchain):<br /> <pre lang="json">"sourcekit.env": {<br />     "SOURCEKIT_TOOLCHAIN_PATH": "/home/USER/swift-DEVELOPMENT-SNAPSHOT-2021-07-30-a-ubuntu20.04/", <br />     "SOURCEKIT_LOGGING": "1", <br />}</pre>|{}|
 
 ## Development
 
