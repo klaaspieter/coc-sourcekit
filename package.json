@@ -72,7 +72,12 @@
             "type": "array",
             "default": [],
             "description": "Extra arguments to pass to the lsp"
-        }
+        },
+		"sourcekit.env": {
+			"type": "object",
+			"default": {},
+			"description": "The environment variables for the lsp"
+		}
       }
     }
   },
