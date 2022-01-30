@@ -63,7 +63,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
   }
 
   const clientOptions: LanguageClientOptions = {
-    documentSelector: ['swift']
+    documentSelector: ['swift', 'c', 'cpp', 'objective-c', 'objective-cpp']
   }
 
   const client = new LanguageClient('sourcekit', 'sourcekit', serverOptions, clientOptions)
