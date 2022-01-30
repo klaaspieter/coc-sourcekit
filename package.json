@@ -16,9 +16,9 @@
     "coc.nvim",
     "languageserver",
     "swift",
-	"c",
-	"cpp",
-	"objc",
+    "c",
+    "cpp",
+    "objc",
     "vim",
     "neovim"
   ],
@@ -32,11 +32,11 @@
     "lint": "eslint . --ext .ts,.js"
   },
   "activationEvents": [
-	"onLanguage:swift",
-	"onLanguage:c",
-	"onLanguage:cpp",
-	"onLanguage:objective-c",
-	"onLanguage:objective-cpp"
+    "onLanguage:swift",
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onLanguage:objective-c",
+    "onLanguage:objective-cpp"
   ],
   "contributes": {
     "configuration": {
