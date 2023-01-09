@@ -1,3 +1,5 @@
+⚠️ I no longer use coc and therefore stopped maintaining coc-sourcekit.
+
 # coc-sourcekit
 
 Sourcekit language server extension for [coc].
